@@ -1,2 +1,2 @@
 language: python
-
+script: python ./PyTravis/PyProCI/src/File1.py

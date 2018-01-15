@@ -11,7 +11,7 @@ def tupleVarArgs(arg1, arg2='defaultB',*theRest):   #*theRest can cosume only no
     print (theRest)                       #('xyz',456.789)
     for eachXtrArg in theRest:
         print ('another arg:', eachXtrArg) 
-    
+    print("Outside for ")
     
 #calling functions        
 tupleVarArgs('abc', 123, 'xyz', 456.789)       #this works       theRest = ('xyz', 456.789)

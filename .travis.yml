@@ -1,8 +1,8 @@
 language: python
 script: python -m py_compile PyProCI/src/File1.py
 install: 
-    -pip install unittest2
-    -pip install py_compile
+    - pip install unittest2
+    - pip install py_compile
 after_success:  curl -i -X PUT "http://sandbox.hortonworks.com:50075/webhdfs/v1/data/b.txt?op=CREATE&user.name=hdfs&namenoderpcaddress=sandbox.hortonworks.com:8020&createflag=&createparent=true&overwrite=false"
 
 

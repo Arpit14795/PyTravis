@@ -1,4 +1,4 @@
 language: python
-script: python PyProCI/src/File1.py
+script: python PyProCI/src/File2.py
 
 

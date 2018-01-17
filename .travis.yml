@@ -1,5 +1,5 @@
 language: python
-script: python -m py_compile PyProCI/src/abc.py
+script: python -m py_compile PyProCI/src/pyspark.py
 install: 
     - pip install pyspark
 after_success: 

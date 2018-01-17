@@ -24,6 +24,6 @@ df_crime_details_ext.show(5)
 spark_sql_context=SQLContext(sc)
 
 result=spark_sql_context.sql("select wd.weather_station_code,cast(from_unixtime(UNIX_TIMESTAMP(wd.data_date, 'dd-MMM-yyyy')) as timestamp) weather_date, cast(from_unixtime(UNIX_TIMESTAMP(cm.date2, 'MM/dd/yyyy')) as timestamp) crime_date,cm.description,wd.highest_temperature from crime_data_2016 cm,  weather_station_data wd where cast(from_unixtime(UNIX_TIMESTAMP(wd.data_date, 'dd-MMM-yyyy')) as timestamp)= cast(from_unixtime(UNIX_TIMESTAMP(cm.date2, 'MM/dd/yyyy')) as timestamp) ")
-	result.show(5)
+result.show(5)
 
 #select date2, year(cast(from_unixtime(UNIX_TIMESTAMP(date2, "MM/dd/yyyy hh:mm:ss")) as timestamp)) as strdate from crime_details limit 5;

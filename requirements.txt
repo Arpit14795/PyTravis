@@ -1,1 +1,1 @@
-compileall>=0.0
+compileall>=x.x

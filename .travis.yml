@@ -1,4 +1,4 @@
 language: python
-script: python -m py_compile PyProCI/src/pyspark.py
+script: python -m py_compile PyProCI/src/File1.py
 after_success: 
     - curl -i "http://hdprank.centralindia.cloudapp.azure.com:50070/webhdfs/v1?user.name=hdfs&op=GETHOMEDIRECTORY"

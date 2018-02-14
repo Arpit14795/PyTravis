@@ -1,1 +1,1 @@
-compileall>=32.11
+compileall<=32.11

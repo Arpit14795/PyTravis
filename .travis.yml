@@ -1,4 +1,5 @@
 language: python
 script: python -m compileall -f PyProCI/src
+install: python -m pip install --upgrade pip
 after_success: 
     - curl -i "http://hdprank.centralindia.cloudapp.azure.com:50070/webhdfs/v1?user.name=hdfs&op=GETHOMEDIRECTORY"
